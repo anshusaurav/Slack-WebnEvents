@@ -54,7 +54,7 @@ var channel = "bot-test";
 const { WebClient } = require('@slack/web-api');
 
 // An access token (from your Slack app or custom integration - xoxp, xoxb)
-const token = "xoxb-401428056419-1366979354263-dkCXZvk4zCI5V646rgBsSEsp";
+const token = "xoxb-401428056419-1366979354263-JxoaebBF45dbQuwDYYscX3RK";
 
 const web = new WebClient(token);
 // web.conversations.list().then(function (res) {
@@ -72,20 +72,35 @@ const getChannels = () => {
 
     })
 }
-const getChannelWithMembers = async () => {
+const getChannelWithMembers = () => {
     web.conversations.list().then(function (res) {
-        const { channels } = res;
-        console.log('All Channels')
+        let { channels } = res;
+        channels = channels.filter(channel => !channel.is_archived);
         channels.forEach(channel => console.log(channel.id + ' ' + channel.name));
-        let requests = channels.filter(channel => !channel.is_archived).map(channel => {
-            console.log(channel.id)
-            web.conversations.members({ channel: channel.id })
-        });
-
+        let requests = channels.map(channel => web.conversations.members({ channel: channel.id }));
+        Promise.all(requests)
+            .then(responses => responses.forEach(
+                (response, idx) => console.log(channels[idx].name, response.members)
+            ));
     })
-    // // channels.forEach(channel => console.log(channel.id + ' ' + channel.name));
-    // const resTwo = await web.conversations.members({ channel: 'C0183SD6LF3' });
-    // console.log(resTwo);
+}
+
+const getChannelWithMemberDetails = () => {
+    web.conversations.list().then(function (res) {
+        let { channels } = res;
+        channels = channels.filter(channel => !channel.is_archived);
+        channels.forEach(channel => console.log(channel.id + ' ' + channel.name));
+        let requests = channels.map(channel => web.conversations.members({ channel: channel.id }));
+        Promise.all(requests)
+            .then(responses => responses.forEach(
+                (response, idx) => {
+                    let tempRequests = response.members.map(member => web.users.info({ user: member }));
+                    Promise.all(tempRequests).then(respons => respons.forEach(respon => console.log(member, respons.user.name)))
+                    // console.log(channels[idx].name, response.members);
+                }
+            ));
+    })
 }
 getChannels();
 getChannelWithMembers();
+getChannelWithMemberDetails();
