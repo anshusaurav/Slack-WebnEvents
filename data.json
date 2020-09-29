@@ -1,0 +1,561 @@
+[
+  {
+    "data": {
+      "standup": {
+        "id": 64871,
+        "sentiments": {
+          "byDate": [],
+          "positiveCurve": [],
+          "negativeCurve": [],
+          "__typename": "SentimentData"
+        },
+        "__typename": "Standup"
+      }
+    }
+  },
+  {
+    "data": {
+      "standup": {
+        "id": 64871,
+        "isAnonymous": false,
+        "questions": [
+          {
+            "id": 1471447,
+            "text": "What did you work on yesterday?",
+            "color": "839bbd",
+            "isRandom": false,
+            "aggregation": {
+              "responsesCount": 4,
+              "text": [
+                {
+                  "answer": {
+                    "text": "Finished with media playback, widget and expresso and also publishing the app. Finished the course few last excercises are pending",
+                    "images": [],
+                    "__typename": "Answer"
+                  },
+                  "user": {
+                    "username": "Vikram Ravindra Shetty",
+                    "profileImage": "https://secure.gravatar.com/avatar/61fb6e13bf0d7b458e889e670bf6bbcc.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0019-192.png",
+                    "__typename": "User"
+                  },
+                  "__typename": "TextAggregation"
+                },
+                {
+                  "answer": {
+                    "text": "Completed with the advanced android apps course",
+                    "images": [],
+                    "__typename": "Answer"
+                  },
+                  "user": {
+                    "username": "Leslie Vas",
+                    "profileImage": "https://secure.gravatar.com/avatar/e470cdc9cbe1db74a29f226b2a162a99.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-192.png",
+                    "__typename": "User"
+                  },
+                  "__typename": "TextAggregation"
+                },
+                {
+                  "answer": {
+                    "text": "Worked on project but still it is not completed.",
+                    "images": [],
+                    "__typename": "Answer"
+                  },
+                  "user": {
+                    "username": "divya.sharma",
+                    "profileImage": "https://secure.gravatar.com/avatar/f0caee9a961a2a1e6007670abf10f716.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0000-192.png",
+                    "__typename": "User"
+                  },
+                  "__typename": "TextAggregation"
+                },
+                {
+                  "answer": {
+                    "text": "The last four lessons that were left are completed and my course is done.<br />I have also written that Article on medium.<br />Answered two questions on stackoverflow<br /><br />https://stackoverflow.com/questions/63980546/what-is-the-use-of-api-in-android-studio-and-what-is-the-meaning-of-requesting/63983498#63983498<br />",
+                    "images": [],
+                    "__typename": "Answer"
+                  },
+                  "user": {
+                    "username": "Ankit",
+                    "profileImage": "https://secure.gravatar.com/avatar/7e2cf9d63836a50721044156c2bd1ed3.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-192.png",
+                    "__typename": "User"
+                  },
+                  "__typename": "TextAggregation"
+                }
+              ],
+              "numeric": null,
+              "categorical": null,
+              "__typename": "QuestionAnswersAggregation"
+            },
+            "__typename": "Question"
+          },
+          {
+            "id": 1471448,
+            "text": "What's the plan for today?",
+            "color": "ea9c9c",
+            "isRandom": false,
+            "aggregation": {
+              "responsesCount": 4,
+              "text": [
+                {
+                  "answer": {
+                    "text": "Will finish that excercises and will start working on next project",
+                    "images": [],
+                    "__typename": "Answer"
+                  },
+                  "user": {
+                    "username": "Vikram Ravindra Shetty",
+                    "profileImage": "https://secure.gravatar.com/avatar/61fb6e13bf0d7b458e889e670bf6bbcc.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0019-192.png",
+                    "__typename": "User"
+                  },
+                  "__typename": "TextAggregation"
+                },
+                {
+                  "answer": {
+                    "text": "Start with new project",
+                    "images": [],
+                    "__typename": "Answer"
+                  },
+                  "user": {
+                    "username": "Leslie Vas",
+                    "profileImage": "https://secure.gravatar.com/avatar/e470cdc9cbe1db74a29f226b2a162a99.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-192.png",
+                    "__typename": "User"
+                  },
+                  "__typename": "TextAggregation"
+                },
+                {
+                  "answer": {
+                    "text": "Will do the left part that is not working.",
+                    "images": [],
+                    "__typename": "Answer"
+                  },
+                  "user": {
+                    "username": "divya.sharma",
+                    "profileImage": "https://secure.gravatar.com/avatar/f0caee9a961a2a1e6007670abf10f716.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0000-192.png",
+                    "__typename": "User"
+                  },
+                  "__typename": "TextAggregation"
+                },
+                {
+                  "answer": {
+                    "text": "https://stackoverflow.com/questions/63980546/what-is-the-use-of-api-in-android-studio-and-what-is-the-meaning-of-requesting/63983498#63983498 - second question link I will do the project.",
+                    "images": [],
+                    "__typename": "Answer"
+                  },
+                  "user": {
+                    "username": "Ankit",
+                    "profileImage": "https://secure.gravatar.com/avatar/7e2cf9d63836a50721044156c2bd1ed3.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-192.png",
+                    "__typename": "User"
+                  },
+                  "__typename": "TextAggregation"
+                }
+              ],
+              "numeric": null,
+              "categorical": null,
+              "__typename": "QuestionAnswersAggregation"
+            },
+            "__typename": "Question"
+          }
+        ],
+        "__typename": "Standup"
+      }
+    }
+  },
+  {
+    "data": {
+      "standup": {
+        "id": 64871,
+        "reports": [
+          {
+            "id": 32801151,
+            "answers": [
+              {
+                "id": 53552177,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "The last four lessons that were left are completed and my course is done.<br />I have also written that Article on medium.<br />Answered two questions on stackoverflow<br /><br />https://stackoverflow.com/questions/63980546/what-is-the-use-of-api-in-android-studio-and-what-is-the-meaning-of-requesting/63983498#63983498<br />",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53552203,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "https://stackoverflow.com/questions/63980546/what-is-the-use-of-api-in-android-studio-and-what-is-the-meaning-of-requesting/63983498#63983498 - second question link I will do the project.",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "UCBBX2THR",
+              "username": "Ankit",
+              "realname": "Ankit Sharma",
+              "profileImage": "https://secure.gravatar.com/avatar/7e2cf9d63836a50721044156c2bd1ed3.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600655489,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32801129,
+            "answers": [
+              {
+                "id": 53551800,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Finished with media playback, widget and expresso and also publishing the app. Finished the course few last excercises are pending",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53551834,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Will finish that excercises and will start working on next project",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "U019ASDQ83B",
+              "username": "Vikram Ravindra Shetty",
+              "realname": "Vikram Ravindra Shetty",
+              "profileImage": "https://secure.gravatar.com/avatar/61fb6e13bf0d7b458e889e670bf6bbcc.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0019-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600655485,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32801118,
+            "answers": [
+              {
+                "id": 53552088,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Worked on project but still it is not completed.",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53552106,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Will do the left part that is not working.",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "U018YE24XR9",
+              "username": "divya.sharma",
+              "realname": "Divya Sharma",
+              "profileImage": "https://secure.gravatar.com/avatar/f0caee9a961a2a1e6007670abf10f716.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0000-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600655484,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32801112,
+            "answers": [
+              {
+                "id": 53551879,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Completed with the advanced android apps course",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53551882,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Start with new project",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "U018WSGCZNZ",
+              "username": "Leslie Vas",
+              "realname": "Leslie Vas",
+              "profileImage": "https://secure.gravatar.com/avatar/e470cdc9cbe1db74a29f226b2a162a99.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600655483,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32781571,
+            "answers": [
+              {
+                "id": 53541645,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Finished FCM",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53541650,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Go left courses ",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "UCBBX2THR",
+              "username": "Ankit",
+              "realname": "Ankit Sharma",
+              "profileImage": "https://secure.gravatar.com/avatar/7e2cf9d63836a50721044156c2bd1ed3.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600482674,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32781566,
+            "answers": [
+              {
+                "id": 53541449,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Finished with firebase clouding and places already working on lesson 6 media playback.",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53541454,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Expecting to finish course today",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "U019ASDQ83B",
+              "username": "Vikram Ravindra Shetty",
+              "realname": "Vikram Ravindra Shetty",
+              "profileImage": "https://secure.gravatar.com/avatar/61fb6e13bf0d7b458e889e670bf6bbcc.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0019-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600482673,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32781565,
+            "answers": [
+              {
+                "id": 53541393,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Worked on project.",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53541419,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Will try to finish project by today.",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "U018YE24XR9",
+              "username": "divya.sharma",
+              "realname": "Divya Sharma",
+              "profileImage": "https://secure.gravatar.com/avatar/f0caee9a961a2a1e6007670abf10f716.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0000-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600482672,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32781564,
+            "answers": [
+              {
+                "id": 53541803,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Completed with Place pickers, geofences , playing media in android , different formats,  creating android widgets , Remote Views class,  Intent services",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53541804,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Today I'll complete with Espresso and publishing my app",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "U018WSGCZNZ",
+              "username": "Leslie Vas",
+              "realname": "Leslie Vas",
+              "profileImage": "https://secure.gravatar.com/avatar/e470cdc9cbe1db74a29f226b2a162a99.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600482672,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32699874,
+            "answers": [
+              {
+                "id": 53473363,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Completed fragments(All about fragments like communication in fragments, fragment manager and much more) and third lesson Libraries is also completed and few exercise of cloud is completed ",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53473375,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Today I will complete 2-3 more lessons.",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "UCBBX2THR",
+              "username": "Ankit",
+              "realname": "Ankit Sharma",
+              "profileImage": "https://secure.gravatar.com/avatar/7e2cf9d63836a50721044156c2bd1ed3.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600396234,
+            "isAnonymous": false,
+            "__typename": "Report"
+          },
+          {
+            "id": 32699850,
+            "answers": [
+              {
+                "id": 53473094,
+                "question": {
+                  "id": 1471447,
+                  "color": "839bbd",
+                  "text": "What did you work on yesterday?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Finished with Fragments and libraries from the advance course",
+                "images": [],
+                "__typename": "Answer"
+              },
+              {
+                "id": 53473121,
+                "question": {
+                  "id": 1471448,
+                  "color": "ea9c9c",
+                  "text": "What's the plan for today?",
+                  "__typename": "TimelineQuestion"
+                },
+                "text": "Started with firebase cloud messaging and will finish the rest of the course by today",
+                "images": [],
+                "__typename": "Answer"
+              }
+            ],
+            "member": {
+              "id": "U019ASDQ83B",
+              "username": "Vikram Ravindra Shetty",
+              "realname": "Vikram Ravindra Shetty",
+              "profileImage": "https://secure.gravatar.com/avatar/61fb6e13bf0d7b458e889e670bf6bbcc.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0019-192.png",
+              "__typename": "User"
+            },
+            "timestamp": 1600396231,
+            "isAnonymous": false,
+            "__typename": "Report"
+          }
+        ],
+        "__typename": "Standup"
+      }
+    }
+  }
+]

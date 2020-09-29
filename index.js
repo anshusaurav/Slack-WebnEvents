@@ -1,37 +1,6 @@
-
-var channel = "bot-test";
-// var SlackBot = require("slackbots");
-// var bot = new SlackBot({
-//     token: "xoxb-401428056419-1405682548464-f7cCISzdSSYJHqe6IDG5eq9Q",
-//     name: "trialbot"
-//     // token: "xoxb-401428056419-1366979354263-dkCXZvk4zCI5V646rgBsSEsp",
-//     // name: "jokebot"
-// });
-// const channels = [];
-// bot.on("start", function () {
-//     bot.postMessageToChannel(channel, "Hello world!");
-//     console.log("Hello world!");
-//     bot.getChannels().then(function (data) {
-//         const { channels } = data;
-//         channels.forEach(channel => console.log(channel.id + ' ' + channel.name));
-//     })
-
-
-//     bot.getUsers().then(function (data) {
-//         const { members } = data;
-//         members.forEach(user => console.log(user.id + ' ' + user.name + ' ' + user.real_name + ' ' + user.tz));
-//     })
-// });
-
-
-
-// const token = "xoxb-401428056419-1366979354263-dkCXZvk4zCI5V646rgBsSEsp"
-// const Slack = require('slack')
-// const bot = new Slack({ token })
-
-// // logs {args:{hyper:'card'}}
-// slack.channels.history({ token, channel })
-// bot.api.test({ hyper: 'card' }).then(console.log)
+const express = require("express")
+// const CronJob = require('cron').CronJob;
+const app = express();
 
 // CBT9CGUBE general
 // CBUHLH8TZ random
@@ -54,15 +23,10 @@ var channel = "bot-test";
 const { WebClient } = require('@slack/web-api');
 
 // An access token (from your Slack app or custom integration - xoxp, xoxb)
-const token = "xoxb-401428056419-1366979354263-JxoaebBF45dbQuwDYYscX3RK";
+const token = "xoxb-401428056419-1412228129808-ki9RGJzmaTiQo7tvziBf53jk";
 
 const web = new WebClient(token);
-// web.conversations.list().then(function (res) {
-//     const { channels } = res;
-//     channels.forEach(channel => console.log(channel.id + ' ' + channel.name));
-//     let requests = channels.map(channel => web.conversations.members(channel.id)
-//     );
-// })
+
 
 
 const getChannels = () => {
@@ -80,27 +44,65 @@ const getChannelWithMembers = () => {
         let requests = channels.map(channel => web.conversations.members({ channel: channel.id }));
         Promise.all(requests)
             .then(responses => responses.forEach(
-                (response, idx) => console.log(channels[idx].name, response.members)
+                (response, idx) => console.log(channels[idx].name, response)
             ));
     })
+}
+const getChannelsUsingCursor = async (channels, cursor) => {
+    channels = channels || [];
+    let payload = {};
+    if (cursor)
+        payload.cursor = cursor;
+    let res = await web.conversations.list(payload);
+    channels = channels.concat(res.channels);
+    if (res.response_metadata && res.response_metadata.next_cursor && res.response_metadata.next_cursor.length) {
+        return getChannelsUsingCursor(channels, res.response_metadata.next_cursor);
+    }
+    return channels;
+
 }
 
-const getChannelWithMemberDetails = () => {
-    web.conversations.list().then(function (res) {
-        let { channels } = res;
-        channels = channels.filter(channel => !channel.is_archived);
-        channels.forEach(channel => console.log(channel.id + ' ' + channel.name));
-        let requests = channels.map(channel => web.conversations.members({ channel: channel.id }));
-        Promise.all(requests)
-            .then(responses => responses.forEach(
-                (response, idx) => {
-                    let tempRequests = response.members.map(member => web.users.info({ user: member }));
-                    Promise.all(tempRequests).then(respons => respons.forEach(respon => console.log(member, respons.user.name)))
-                    // console.log(channels[idx].name, response.members);
-                }
-            ));
-    })
+
+const getAllMembersUsingCursor = async (channel, members, cursor) => {
+    // web.conversations.members({ channel: channel.id }));
+    members = members || [];
+    let payload = {};
+    if (cursor)
+        payload.cursor = cursor;
+    let res = await web.conversations.members({ channel, payload })
+    members = members.concat(res.members);
+    console.log(res, payload)
+    // if (res.response_metadata && res.response_metadata.next_cursor && res.response_metadata.next_cursor.length) {
+    //     return getAllMembersUsingCursor(channel, members, res.response_metadata.next_cursor);
+    // }
+    return members;
 }
-getChannels();
-getChannelWithMembers();
-getChannelWithMemberDetails();
+
+const run = async () => {
+    const channels = await getChannelsUsingCursor();
+    console.log(channels)
+    const members = await getAllMembersUsingCursor('CBT9CGUBE');
+    console.log(members.length)
+}
+
+// const getChannels = async (channels, cursor) => {
+//     channels = channels || []
+
+//     let payload = {}
+//     if (cursor) payload.cursor = cursor
+//     let result = await callAPIMethodPost('users.conversations', payload)
+//     channels = channels.concat(result.channels)
+//     if (result.response_metadata && result.response_metadata.next_cursor && result.response_metadata.next_cursor.length)
+//         return getChannels(channels, result.response_metadata.next_cursor)
+
+//     return channels
+// }
+// getChannelsUsingCursor();
+// getChannels();
+// getChannelsUsingCursor();
+// getAllMembersUsingCursor('CBT9CGUBE')
+// getChannelWithMembers();
+run();
+app.listen(4000, () => {
+    console.log("Server started");
+});
